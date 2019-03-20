@@ -1,33 +1,211 @@
-.App {
-  text-align: center;
+@import '~bootstrap/dist/css/bootstrap.css';
+
+:root {
+    font-size: 20px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+html {
+    box-sizing: border-box;
+    background-color: #323232;
+    height: 100%;
+    margin: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+    font-family: "Lucida Grande", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    min-width:320px;
+    position:relative;
+    line-height: 1.75;
+    opacity:1;
 }
 
-.App-link {
-  color: #61dafb;
+.grid {
+    display: grid;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-header {
+    min-height: 100vh;
+    background-size: cover;
+    background-position:center;
+    position: relative;
+    background-image: url('./back-colored.png');
+    align-content: center;
+}
+
+
+.header-content {
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+
+}
+.header-content h1{
+    font-size: 60px;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.logoNeptune {
+    display: block;
+    margin: 0 auto;
+    height: 500px;
+    width: 500px;
+}
+
+.header-content p {
+    font-size: 25px;
+    margin: 30px 100px;
+    line-height: 1.5;
+}
+
+
+.registrationForm {
+    background-color: #323232;
+    grid-column: 1/ -1;
+    grid-row: 2;
+}
+
+.registrationForm h1{
+    font-size: 60px;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.registrationForm p {
+    font-size: 25px;
+    margin: 30px 100px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.registrationButton {;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: block;
+    margin: 0 auto;
+    background-color: transparent;
+    margin-bottom: 50px;
+}
+.form-check-label {
+    font-size: 20px;
+}
+
+
+.form-group {
+    width: 17em;
+    margin: 0 auto;
+    padding-bottom: 0.5em;
+}
+
+
+.form-check {
+    width: 17em;
+    margin: 0 auto;
+    color: white;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    font-size: 0.8em;
+}
+
+.collaboration {
+    min-height: 100vh;
+    background-size: cover;
+    background-position:center;
+    position: relative;
+    background-image: url('./Bitmap.png');
+    align-content: center;
+}
+
+.collaboration::before {
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    background-color: green;
+    opacity: 0.92;
+}
+
+.collaboration-content {
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    position:absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 0;
+
+
+}
+
+.collaboration h1{
+    font-size: 60px;
+    margin: 0 0;
+    line-height: 1.5;
+}
+
+.collaboration-content p {
+    font-size: 25px;
+    margin: 30px 100px;
+    line-height: 1.5;
+}
+
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+
+}
+
+p {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .logoNeptune {
+        height: 380px;
+        width: 380px;
+    }
+    .header-content {
+        padding: 40px 20px;
+    }
+    .header-content h1 {
+        font-size: 50px
+    }
+    .header-content p {
+        font-size: 20px
+    }
+    .registrationForm h1 {
+        font-size: 50px
+    }
+    .registrationForm p {
+        font-size: 20px;
+        margin: 10px 100px;
+    }
+    .form-check-label {
+        font-size: 15px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 420px) {
+
+
 }
