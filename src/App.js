@@ -3,10 +3,6 @@ import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink, Label, Input, FormGroup, Form, Button,
 } from 'reactstrap';
 import RegistrationForm from './RegistrationForm';
 import Joi from 'joi';
@@ -21,7 +17,7 @@ const schema = Joi.object().keys({
 
 class App extends Component {
   state = {
-    // isOpen: false
+    isOpen: false,
     formInput: {
       teamName: '',
       firstName: '',
@@ -33,15 +29,16 @@ class App extends Component {
       playerThreeSteam: '',
       playerFourSteam: '',
       playerFiveSteam: '',
-      substituteSteam: ''
+      substituteSteam: '',
+      mobile: ''
     }
   };
 
-  // toggle() {
-  //     this.setState({
-  //         isOpen: !this.state.isOpen
-  //     });
-  // }
+  toggle() {
+      this.setState({
+          isOpen: !this.state.isOpen
+      });
+  }
   formIsValid = () => {
     const formInput = {
       teamName: this.state.formInput.teamName,
@@ -89,27 +86,37 @@ class App extends Component {
   };
 
   render() {
-    // this.toggle = this.toggle.bind(this);
+    this.toggle = this.toggle.bind(this);
     return (
         <div className='grid'>
-          {/*<header>*/}
-          {/*<Navbar color="light" light expand="md">*/}
-          {/*<NavbarBrand href="/">reactstrap</NavbarBrand>*/}
-          {/*<NavbarToggler onClick={this.toggle}/>*/}
-          {/*<Collapse isOpen={this.state.isOpen} navbar>*/}
-          {/*<Nav className="ml-auto" navbar>*/}
-          {/*<NavItem>*/}
-          {/*<NavLink href="/components/">Components</NavLink>*/}
-          {/*</NavItem>*/}
-          {/*<NavItem>*/}
-          {/*<NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>*/}
-          {/*</NavItem>*/}
-          {/*</Nav>*/}
-          {/*</Collapse>*/}
-          {/*</Navbar>*/}
-          {/*</header>*/}
+
 
           <header className="main-header grid">
+
+            <Navbar color="light" light expand="md">
+
+              <NavbarToggler onClick={this.toggle}/>
+              <Collapse isOpen={this.state.isOpen} navbar>
+                <ul className="nav-items" navbar>
+                  <li className='nav-item'>
+                    <a href="#">Информация</a>
+                  </li>
+                  <li className='nav-item'>
+                    <a href="#">Регистрация</a>
+                  </li>
+                  <li className='nav-item'>
+                    <img className='logoDreamBig' src={require('./logo_DreamBig.png')} alt=""/>
+                  </li>
+                  <li className='nav-item'>
+                    <a href="#">Соотрудничество</a>
+                  </li>
+                  <li className='nav-item'>
+                    <a href="#">Контакты</a>
+                  </li>
+                </ul>
+              </Collapse>
+            </Navbar>
+
             <div className="header-content grid">
               <h1>Season Neptune</h1>
               <img className='logoNeptune' src={require('./logo_Neptune.png')} alt=""/>
@@ -136,6 +143,7 @@ class App extends Component {
               playerFourSteam= {this.state.playerFourSteam}
               playerFiveSteam={this.state.playerFiveSteam}
               substituteSteam= {this.state.substituteSteam}
+              mobile = {this.state.mobile}
               formSubmitted = {this.formSubmitted}
               valueChanged = {this.valueChanged}
               formIsValid = {this.formIsValid}
