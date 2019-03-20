@@ -8,7 +8,7 @@ html {
     box-sizing: border-box;
     background-color: #323232;
     height: 100%;
-    margin: 0px;
+    margin: 0;
 }
 
 body {
@@ -24,6 +24,29 @@ body {
 
 .grid {
     display: grid;
+}
+
+nav{
+    background-color:#323232;
+}
+
+.navigation-items{
+    display: inline-flex;
+    justify-content: space-evenly;
+    padding: 20px 5px ;
+    margin: 10px 5px;
+    list-style: none;
+}
+
+.navigation-items-item > a{
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px transparent;
+}
+
+.navigation-items-item > a:hover{
+    border-bottom: 1px solid white;
+    transition: .2s;
 }
 
 .main-header {
@@ -105,7 +128,7 @@ body {
 .registrationForm {
     background-color: #323232;
     grid-column: 1/ -1;
-    grid-row: 2;
+    grid-row: 3;
 }
 
 .registrationForm h1{

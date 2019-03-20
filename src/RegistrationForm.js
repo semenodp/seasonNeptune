@@ -43,6 +43,16 @@ export default (props) => {
                     />
                 </FormGroup>
                 <FormGroup>
+                    <Label for="mobile"></Label>
+                    <Input
+                        onChange={props.valueChanged}
+                        type="text"
+                        name="mobile"
+                        id="mobile"
+                        placeholder="Номер телефона"
+                    />
+                </FormGroup>
+                <FormGroup>
                     <Label for="vkUrl"></Label>
                     <Input
                         onChange={props.valueChanged}

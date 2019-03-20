@@ -47,7 +47,7 @@ class App extends Component {
     const result = Joi.validate(formInput, schema);
 
     return !result.error;
-  };
+  }
 
   formSubmitted = (event) => {
     event.preventDefault();
@@ -89,8 +89,6 @@ class App extends Component {
     this.toggle = this.toggle.bind(this);
     return (
         <div className='grid'>
-
-
           <header className="main-header grid">
 
             <Navbar color="light" light expand="md">
@@ -130,11 +128,11 @@ class App extends Component {
 
 
           </header>
-
           <RegistrationForm
               teamName = {this.state.teamName}
               firstName= {this.state.firstName}
               lastName= {this.state.lastName}
+              mobile={this.state.mobile}
               vkUrl= {this.state.vkUrl}
               capitanSteam = {this.state.capitanSteam}
               email= {this.state.email}
