@@ -90,9 +90,7 @@ class App extends Component {
     return (
         <div className='grid'>
           <header className="main-header grid">
-
             <Navbar color="light" light expand="md">
-
               <NavbarToggler onClick={this.toggle}/>
               <Collapse isOpen={this.state.isOpen} navbar>
                 <ul className="nav-items" navbar>
@@ -141,11 +139,12 @@ class App extends Component {
               playerFourSteam= {this.state.playerFourSteam}
               playerFiveSteam={this.state.playerFiveSteam}
               substituteSteam= {this.state.substituteSteam}
-              mobile = {this.state.mobile}
               formSubmitted = {this.formSubmitted}
               valueChanged = {this.valueChanged}
               formIsValid = {this.formIsValid}
           />
+
+
           <section className="collaboration grid">
             <div className="collaboration-content grid">
               <h1>Сотрудничество</h1>
@@ -159,7 +158,6 @@ class App extends Component {
 
               </button>
             </div>
-
           </section>
 
           <footer>

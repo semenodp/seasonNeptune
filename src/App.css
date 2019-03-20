@@ -26,28 +26,6 @@ body {
     display: grid;
 }
 
-nav{
-    background-color:#323232;
-}
-
-.navigation-items{
-    display: inline-flex;
-    justify-content: space-evenly;
-    padding: 20px 5px ;
-    margin: 10px 5px;
-    list-style: none;
-}
-
-.navigation-items-item > a{
-    text-decoration: none;
-    color: white;
-    border-bottom: 1px transparent;
-}
-
-.navigation-items-item > a:hover{
-    border-bottom: 1px solid white;
-    transition: .2s;
-}
 
 .main-header {
     min-height: 100vh;
@@ -97,7 +75,6 @@ nav{
     background-image: url('./icons8-menu.svg');
 
 }
-
 
 .header-content {
     color: white;
