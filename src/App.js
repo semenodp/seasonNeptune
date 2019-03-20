@@ -50,7 +50,7 @@ class App extends Component {
     const result = Joi.validate(formInput, schema);
 
     return !result.error;
-  };
+  }
 
   formSubmitted = (event) => {
     event.preventDefault();
@@ -92,23 +92,27 @@ class App extends Component {
     // this.toggle = this.toggle.bind(this);
     return (
         <div className='grid'>
-          {/*<header>*/}
-          {/*<Navbar color="light" light expand="md">*/}
-          {/*<NavbarBrand href="/">reactstrap</NavbarBrand>*/}
-          {/*<NavbarToggler onClick={this.toggle}/>*/}
-          {/*<Collapse isOpen={this.state.isOpen} navbar>*/}
-          {/*<Nav className="ml-auto" navbar>*/}
-          {/*<NavItem>*/}
-          {/*<NavLink href="/components/">Components</NavLink>*/}
-          {/*</NavItem>*/}
-          {/*<NavItem>*/}
-          {/*<NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>*/}
-          {/*</NavItem>*/}
-          {/*</Nav>*/}
-          {/*</Collapse>*/}
-          {/*</Navbar>*/}
-          {/*</header>*/}
-
+          <section className="navigation-main grid">
+          <nav className="navigation grid">
+            <ul className="navigation-items">
+              <li className="navigation-items-item">
+                <a href="/">Информация</a>
+              </li>
+              <li className="navigation-items-item">
+                <a href="/">Регистрация</a>
+              </li>
+              <li className="navigation-items-item">
+                <img src="src/logo_DreamBig.png" alt="logo" width="100" height="60"/>
+              </li>
+              <li className="navigation-items-item">
+                <a href="/">Сотрудничество</a>
+              </li>
+              <li className="navigation-items-item">
+                <a href="/">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          </section>
           <header className="main-header grid">
             <div className="header-content grid">
               <h1>Season Neptune</h1>
@@ -123,11 +127,11 @@ class App extends Component {
 
 
           </header>
-
           <RegistrationForm
               teamName = {this.state.teamName}
               firstName= {this.state.firstName}
               lastName= {this.state.lastName}
+              mobile={this.state.mobile}
               vkUrl= {this.state.vkUrl}
               capitanSteam = {this.state.capitanSteam}
               email= {this.state.email}
