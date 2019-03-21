@@ -214,7 +214,7 @@ p {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .logoNeptune {
         height: 380px;
         width: 380px;
@@ -246,6 +246,14 @@ p {
         padding-top: 15px;
         padding-bottom: 15px;
     }
+    .collaboration-content h1 {
+        font-size: 45px
+    }
+    .collaboration-content p {
+        font-size: 20px
+    }
+
+
 
 
 
