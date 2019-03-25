@@ -126,6 +126,95 @@ class App extends Component {
 
 
           </header>
+
+          <section className="landing-section section-blog">
+            <div className="container">
+              <h2>Основная Часть</h2>
+
+
+              <div className="blog-home grid">
+
+                <div className="blog-item">
+                  <img className='blog-item-img' src={require('./youtube-brands.svg')} alt=""/>
+                  <span className="blog-item-content">
+                    <p>Все игры проходят на LAN</p>
+                  </span>
+                </div>
+
+
+                <div className="blog-item">
+                  <img className='blog-item-img' src={require('./youtube-brands.svg')} alt=""/>
+                  <span className="blog-item-content">
+                    <p>Все игры проходят на LAN</p>
+                  </span>
+                </div>
+
+
+                <div className="blog-item">
+                  <img className='blog-item-img' src={require('./youtube-brands.svg')} alt=""/>
+                  <span className="blog-item-content">
+                    <p>Все игры проходят на LAN</p>
+                  </span>
+                </div>
+
+
+                <div className="blog-item">
+                  <img className='blog-item-img' src={require('./youtube-brands.svg')} alt=""/>
+                  <span className="blog-item-content">
+                    <p>Все игры проходят на LAN</p>
+                  </span>
+                </div>
+
+
+
+              </div>
+            </div>
+          </section>
+
+          <section className="landing-section-two section-blog">
+            <div className="container">
+              <h2>Основная Часть</h2>
+
+
+              <div className="blog-home grid">
+
+                <div className="blog-item">
+                  <img className='blog-item-img' src={require('./youtube-brands.svg')} alt=""/>
+                  <span className="blog-item-content">
+                    <p>Все игры проходят на LAN</p>
+                  </span>
+                </div>
+
+
+                <a href="#"className="blog-item">
+                  <img className='blog-item-img' src={require('./youtube-brands.svg')} alt=""/>
+                  <span className="blog-item-content">
+                    <p>Все игры проходят на LAN</p>
+                  </span>
+                </a>
+
+
+                <a href="#"className="blog-item">
+                  <img className='blog-item-img' src={require('./youtube-brands.svg')} alt=""/>
+                  <span className="blog-item-content">
+                    <p>Все игры проходят на LAN</p>
+                  </span>
+                </a>
+
+
+                <a href="#"className="blog-item">
+                  <img className='blog-item-img' src={require('./youtube-brands.svg')} alt=""/>
+                  <span className="blog-item-content">
+                    <p>Все игры проходят на LAN</p>
+                  </span>
+                </a>
+
+
+
+              </div>
+            </div>
+          </section>
+
           <RegistrationForm
               teamName = {this.state.teamName}
               firstName= {this.state.firstName}
