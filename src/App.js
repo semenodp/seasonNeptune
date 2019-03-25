@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
 import {
+  Button,
   Collapse,
   Navbar,
   NavbarToggler,
 } from 'reactstrap';
 import RegistrationForm from './RegistrationForm';
 import Joi from 'joi';
+
 
 import './App.css';
 
@@ -135,34 +137,34 @@ class App extends Component {
               <div className="blog-home grid">
 
                 <div className="blog-item">
-                  <img className='blog-item-img' src={require('./youtube-brands.svg')} alt=""/>
-                  <span className="blog-item-content">
+                  <img className='blog-item-img' src={require('./Shape.svg')} alt=""/>
+                  <div className="blog-item-content">
                     <p>Все игры проходят на LAN</p>
-                  </span>
+                  </div>
                 </div>
 
 
                 <div className="blog-item">
-                  <img className='blog-item-img' src={require('./youtube-brands.svg')} alt=""/>
-                  <span className="blog-item-content">
+                  <img className='blog-item-img' src={require('./trophy.svg')} alt=""/>
+                  <div className="blog-item-content">
                     <p>Все игры проходят на LAN</p>
-                  </span>
+                  </div>
                 </div>
 
 
                 <div className="blog-item">
-                  <img className='blog-item-img' src={require('./youtube-brands.svg')} alt=""/>
-                  <span className="blog-item-content">
+                  <img className='blog-item-img' src={require('./camera.svg')} alt=""/>
+                  <div className="blog-item-content">
                     <p>Все игры проходят на LAN</p>
-                  </span>
+                  </div>
                 </div>
 
 
                 <div className="blog-item">
-                  <img className='blog-item-img' src={require('./youtube-brands.svg')} alt=""/>
-                  <span className="blog-item-content">
+                  <img className='blog-item-img' src={require('./4.png')} alt=""/>
+                  <div className="blog-item-content">
                     <p>Все игры проходят на LAN</p>
-                  </span>
+                  </div>
                 </div>
 
 
@@ -173,41 +175,41 @@ class App extends Component {
 
           <section className="landing-section-two section-blog">
             <div className="container">
-              <h2>Основная Часть</h2>
+              <h2>Отборочная Часть</h2>
 
 
               <div className="blog-home grid">
 
                 <div className="blog-item">
-                  <img className='blog-item-img' src={require('./youtube-brands.svg')} alt=""/>
-                  <span className="blog-item-content">
+                  <img className='blog-item-img' src={require('./world.svg')} alt=""/>
+                  <div className="blog-item-content-blue">
                     <p>Все игры проходят на LAN</p>
-                  </span>
+                  </div>
                 </div>
 
 
-                <a href="#"className="blog-item">
-                  <img className='blog-item-img' src={require('./youtube-brands.svg')} alt=""/>
-                  <span className="blog-item-content">
+                <div className="blog-item">
+                  <img className='blog-item-img' src={require('./four.png')} alt=""/>
+                  <div className="blog-item-content-blue">
                     <p>Все игры проходят на LAN</p>
-                  </span>
-                </a>
+                  </div>
+                </div>
 
 
-                <a href="#"className="blog-item">
-                  <img className='blog-item-img' src={require('./youtube-brands.svg')} alt=""/>
-                  <span className="blog-item-content">
+                <div className="blog-item">
+                  <img className='blog-item-img' src={require('./rouble.svg')} alt=""/>
+                  <div className="blog-item-content-blue">
                     <p>Все игры проходят на LAN</p>
-                  </span>
-                </a>
+                  </div>
+                </div>
 
 
-                <a href="#"className="blog-item">
-                  <img className='blog-item-img' src={require('./youtube-brands.svg')} alt=""/>
-                  <span className="blog-item-content">
+                <div className="blog-item">
+                  <img className='blog-item-img' src={require('./twitch.svg')} alt=""/>
+                  <div className="blog-item-content-blue">
                     <p>Все игры проходят на LAN</p>
-                  </span>
-                </a>
+                  </div>
+                </div>
 
 
 
@@ -235,7 +237,7 @@ class App extends Component {
 
 
           <section className="collaboration grid">
-            <div className="collaboration-content grid">
+            <div className="collaboration-content">
               <h1>Сотрудничество</h1>
               <p>
                 Lorem ipsum dolor sit amet,
@@ -243,14 +245,37 @@ class App extends Component {
                 Adipisci alias at commodi fugiat
                 impedit iste magnam.
               </p>
-              <button>
-
-              </button>
+              <Button type='submit' className='RegistrationButton' color="primary">
+                Написать нам
+              </Button>
             </div>
           </section>
-
-          <footer>
-
+          <footer className="footer grid">
+            <h1>Контакты</h1>
+            <div className="footer-contact grid">
+              <div className="footer-contact-item">
+                <h3>Общие вопросы</h3>
+                <p>egpetrovich13@gmail.com</p>
+              </div>
+              <div className="footer-contact-item">
+                <h3>Общие вопросы</h3>
+                <p>egpetrovich13@gmail.com</p>
+              </div>
+            </div>
+            <div className="social">
+              <a href="/">
+                <img className='social-item-img' src={require('./twitch.svg')} alt=""/>
+              </a>
+              <a href="/">
+                <img className='social-item-img' src={require('./twitch.svg')} alt=""/>
+              </a>
+              <a href="/">
+                <img className='social-item-img' src={require('./twitch.svg')} alt=""/>
+              </a>
+            </div>
+            <p className="footer-final">
+              DreamBig 2019
+            </p>
           </footer>
 
         </div>

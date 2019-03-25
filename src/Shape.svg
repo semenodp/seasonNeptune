@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84px" height="75px" viewBox="0 0 84 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-287.000000, -1146.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="2-block" transform="translate(0.000000, 930.000000)">
+                <g id="Преимущества" transform="translate(208.000000, 215.000000)">
+                    <g id="ICONS" transform="translate(79.000000, 0.000000)">
+                        <g id="desktop-solid" transform="translate(0.000000, 1.000000)">
+                            <path d="M77,0 L7,0 C3.13541667,0 0,3.14941406 0,7.03125 L0,53.90625 C0,57.7880859 3.13541667,60.9375 7,60.9375 L35,60.9375 L32.6666667,67.96875 L22.1666667,67.96875 C20.2270833,67.96875 18.6666667,69.5361328 18.6666667,71.484375 C18.6666667,73.4326172 20.2270833,75 22.1666667,75 L61.8333333,75 C63.7729167,75 65.3333333,73.4326172 65.3333333,71.484375 C65.3333333,69.5361328 63.7729167,67.96875 61.8333333,67.96875 L51.3333333,67.96875 L49,60.9375 L77,60.9375 C80.8645833,60.9375 84,57.7880859 84,53.90625 L84,7.03125 C84,3.14941406 80.8645833,0 77,0 Z M74.6666667,51.5625 L9.33333333,51.5625 L9.33333333,9.375 L74.6666667,9.375 L74.6666667,51.5625 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

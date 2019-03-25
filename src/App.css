@@ -1,9 +1,5 @@
 @import '~bootstrap/dist/css/bootstrap.css';
 
-:root {
-    font-size: 20px;
-}
-
 html {
     box-sizing: border-box;
     background-color: #323232;
@@ -52,6 +48,7 @@ body {
     list-style: none;
     width: 100%;
     align-items: center;
+    font-size: 18px;
 }
 
 .nav-item > a {
@@ -151,25 +148,49 @@ body {
 }
 
 .blog-item-content {
-    text-align: center;
-    align-content: center;
-    display: block;
+    align-items: center;
+    display: flex;
+    justify-content: center;
     height:250px;
     border-style: groove;
-    border-color: red;
+    border-color: #C44D45;
     border-width: 1px;
 }
 
-.blog-item > span:hover {
-    background-color: red;
-
+.blog-item-content:hover {
+    background-color: #C44D45;
 }
 
 .blog-item-content p {
+    color: white;
     font-size: 25px;
     margin: 0 10px;
 }
 
+.blog-item-content-blue {
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height:250px;
+    border-style: groove;
+    border-color: #006494;
+    border-width: 1px;
+}
+
+.blog-item-content-blue p{
+    font-size: 25px;
+    margin: 0 10px;
+    color: black;
+}
+
+.blog-item-content-blue:hover{
+    background-color: #006494;
+}
+
+.blog-item-content-blue:hover p{
+    color: white;
+}
 /*
 
 ФОРМА
@@ -184,25 +205,27 @@ body {
 
 .registrationForm h1{
     font-size: 60px;
+    text-align: center;
     margin: 20px 0;
     line-height: 1.5;
     padding-top: 50px;
+    color: white;
 }
 
 .registrationForm p {
     font-size: 25px;
     margin: 30px 100px;
     line-height: 1.5;
-    margin-bottom: 10px;
+    text-align: center;
+    color: white;
 }
 
 .registrationButton {;
     padding-left: 40px;
     padding-right: 40px;
     display: block;
-    margin: 0 auto;
+    margin: 60px auto;
     background-color: transparent;
-    margin-bottom: 50px;
 }
 .form-check-label {
     font-size: 20px;
@@ -231,7 +254,8 @@ body {
     background-position:center;
     position: relative;
     background-image: url('./Bitmap.png');
-    align-content: center;
+    align-content: start;
+    justify-content: center;
 }
 
 .collaboration::before {
@@ -241,47 +265,70 @@ body {
     left: 0;
     bottom: 0;
     height: 0;
-    background-color: green;
-    opacity: 0.92;
 }
 
 .collaboration-content {
     color: white;
-    text-align: center;
-    padding: 60px 20px;
-    position:absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    height: 0;
-
-
+    padding: 70px 10px;
 }
 
-.collaboration h1{
+.collaboration-content h1{
     font-size: 60px;
+    padding-top: 60px;
+    text-align: center;
     margin: 0 0;
     line-height: 1.5;
 }
 
 .collaboration-content p {
     font-size: 25px;
-    margin: 30px 100px;
+    padding: 40px;
+    margin: 30px 50px;
     line-height: 1.5;
 }
 
-
-h1 {
-    text-align: center;
-    color: white;
-    font-size: 2rem;
-
+.RegistrationButton {
+    padding-left: 40px;
+    padding-right: 40px;
+    display: block;
+    font-size: 25px;
+    margin: 70px auto;
 }
 
-p {
+.footer h1{
     text-align: center;
-    color: white;
-    font-size: 1rem;
+    padding-top: 40px;
+}
+.footer-contact{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.social a{
+    margin: 0 20px;
+}
+
+.footer-contact-item h3{
+    font-size: 32px;
+}
+
+.footer-contact-item p{
+    font-size: 18px;
+}
+
+.social-item-img {
+    height: 70px;
+}
+
+.footer-final{
+    text-align: center;
 }
 
 
@@ -289,7 +336,6 @@ p {
     .blog-home {
         grid-template-columns: repeat(2,1fr);
     }
-
 }
 
 
@@ -321,7 +367,7 @@ p {
     }
     .nav-items {
         display: block;
-        padding-left: 0px;
+        padding-left: 0;
     }
     .nav-item {
         padding-top: 15px;
@@ -334,7 +380,9 @@ p {
         font-size: 20px
     }
 
-
+    .footer-contact{
+        display: grid;
+    }
 
 
 
