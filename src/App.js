@@ -90,7 +90,7 @@ class App extends Component {
   render() {
     this.toggle = this.toggle.bind(this);
     return (
-        <div className='grid'>
+        <div className='wrapper grid'>
           <header className="main-header grid">
             <Navbar color="light" light expand="md">
               <NavbarToggler onClick={this.toggle}/>
@@ -240,10 +240,8 @@ class App extends Component {
             <div className="collaboration-content">
               <h1>Сотрудничество</h1>
               <p>
-                Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit.
-                Adipisci alias at commodi fugiat
-                impedit iste magnam.
+               Мы стремимся создать качественный и удобный продукт для любительского киберспорта. Предлагаем вам стать частью
+                нашего проекта. Вместе сможем достигнуть больших результатов.
               </p>
               <Button type='submit' className='RegistrationButton' color="primary">
                 Написать нам
@@ -252,7 +250,7 @@ class App extends Component {
           </section>
           <footer className="footer grid">
             <h1>Контакты</h1>
-            <div className="footer-contact grid">
+            <div className="footer-contact">
               <div className="footer-contact-item">
                 <h3>Общие вопросы</h3>
                 <p>egpetrovich13@gmail.com</p>

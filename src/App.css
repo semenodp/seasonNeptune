@@ -2,7 +2,7 @@
 
 html {
     box-sizing: border-box;
-    background-color: #323232;
+    background-color: white;
     height: 100%;
     margin: 0;
 }
@@ -34,9 +34,9 @@ body {
 
 
 .navbar {
-    top: 0px;
-    right: 0px;
-    left: 0px;
+    top: 0;
+    right: 0;
+    left: 0;
     background-color:#323232 !important;
     position: absolute;
 }
@@ -135,6 +135,7 @@ body {
     text-decoration: none;
     /*grid-template-rows: 1fr 2fr;*/
     overflow:hidden;
+    padding: 30px;
 }
 
 
@@ -282,8 +283,9 @@ body {
 
 .collaboration-content p {
     font-size: 25px;
+    text-align: center;
     padding: 40px;
-    margin: 30px 50px;
+    margin: 30px 200px;
     line-height: 1.5;
 }
 
@@ -293,6 +295,9 @@ body {
     display: block;
     font-size: 25px;
     margin: 70px auto;
+}
+
+.footer{
 }
 
 .footer h1{
@@ -377,7 +382,9 @@ body {
         font-size: 45px
     }
     .collaboration-content p {
-        font-size: 20px
+        font-size: 20px;
+        text-align: center;
+        margin: 20px 40px;
     }
 
     .footer-contact{
