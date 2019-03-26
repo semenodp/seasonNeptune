@@ -97,19 +97,19 @@ class App extends Component {
               <Collapse isOpen={this.state.isOpen} navbar>
                 <ul className="nav-items" navbar>
                   <li className='nav-item'>
-                    <a href="#">Информация</a>
+                    <a href="/">Информация</a>
                   </li>
                   <li className='nav-item'>
-                    <a href="#">Регистрация</a>
+                    <a href="/">Регистрация</a>
                   </li>
                   <li className='nav-item'>
                     <img className='logoDreamBig' src={require('./logo_DreamBig.png')} alt=""/>
                   </li>
                   <li className='nav-item'>
-                    <a href="#">Соотрудничество</a>
+                    <a href="/">Соотрудничество</a>
                   </li>
                   <li className='nav-item'>
-                    <a href="#">Контакты</a>
+                    <a href="/">Контакты</a>
                   </li>
                 </ul>
               </Collapse>

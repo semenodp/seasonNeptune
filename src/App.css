@@ -49,6 +49,7 @@ body {
     width: 100%;
     align-items: center;
     font-size: 18px;
+    padding: 0;
 }
 
 .nav-item > a {
