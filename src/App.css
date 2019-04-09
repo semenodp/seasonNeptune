@@ -28,7 +28,7 @@ body {
     background-size: cover;
     background-position:center;
     position: relative;
-    background-image: url('./back-colored.png');
+    background-image: url('images/back-colored.png');
     align-content: center;
 }
 
@@ -70,7 +70,7 @@ body {
 }
 
 .navbar-light .navbar-toggler-icon {
-    background-image: url('./icons8-menu.svg');
+    background-image: url('images/icons8-menu.svg');
 
 }
 
@@ -255,7 +255,7 @@ body {
     background-size: cover;
     background-position:center;
     position: relative;
-    background-image: url('./Bitmap.png');
+    background-image: url('images/Bitmap.png');
     align-content: start;
     justify-content: center;
 }
